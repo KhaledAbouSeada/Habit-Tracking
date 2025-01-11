@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCh5-l6L_VdOTyvHSiqdWpWQGPSiqfBcJU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>404534563196</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Edafa.Habit-Tracking-App</string>
+	<key>PROJECT_ID</key>
+	<string>habit-tracking-app-bb674</string>
+	<key>STORAGE_BUCKET</key>
+	<string>habit-tracking-app-bb674.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:404534563196:ios:a6cfa6d5d71a6900db94f9</string>
+	<key>DATABASE_URL</key>
+	<string>https://habit-tracking-app-bb674-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

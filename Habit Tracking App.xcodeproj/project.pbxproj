@@ -14,6 +14,11 @@
 		E6F60DA82D32882D00E366BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6F60DA72D32882D00E366BC /* Base */; };
 		E6F60DB22D32889000E366BC /* AddHabitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F60DB12D32889000E366BC /* AddHabitVC.xib */; };
 		E6F60DB32D32889000E366BC /* AddHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DB02D32889000E366BC /* AddHabitVC.swift */; };
+		E6F60DBE2D329CF800E366BC /* HabitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DBD2D329CF800E366BC /* HabitModel.swift */; };
+		E6F60DC02D329E6E00E366BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6F60DBF2D329E6E00E366BC /* GoogleService-Info.plist */; };
+		E6F60DC22D329F4A00E366BC /* AddHabitVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DC12D329F4A00E366BC /* AddHabitVC+UITableView.swift */; };
+		E6F60DC62D32A03900E366BC /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DC42D32A03900E366BC /* HabitTableViewCell.swift */; };
+		E6F60DC72D32A03900E366BC /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		E6F60DA92D32882D00E366BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F60DB02D32889000E366BC /* AddHabitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitVC.swift; sourceTree = "<group>"; };
 		E6F60DB12D32889000E366BC /* AddHabitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddHabitVC.xib; sourceTree = "<group>"; };
+		E6F60DBD2D329CF800E366BC /* HabitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitModel.swift; sourceTree = "<group>"; };
+		E6F60DBF2D329E6E00E366BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6F60DC12D329F4A00E366BC /* AddHabitVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitVC+UITableView.swift"; sourceTree = "<group>"; };
+		E6F60DC42D32A03900E366BC /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
+		E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 		E6F60DB52D32899A00E366BC /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E6F60DBF2D329E6E00E366BC /* GoogleService-Info.plist */,
 				E6F60DA92D32882D00E366BC /* Info.plist */,
 			);
 			path = Core;
@@ -136,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F60DB02D32889000E366BC /* AddHabitVC.swift */,
+				E6F60DC12D329F4A00E366BC /* AddHabitVC+UITableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +155,7 @@
 		E6F60DBB2D328D9E00E366BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6F60DC32D32A01F00E366BC /* HabitTableViewCell */,
 				E6F60DB12D32889000E366BC /* AddHabitVC.xib */,
 			);
 			path = View;
@@ -151,8 +164,18 @@
 		E6F60DBC2D328D9F00E366BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E6F60DBD2D329CF800E366BC /* HabitModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E6F60DC32D32A01F00E366BC /* HabitTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E6F60DC42D32A03900E366BC /* HabitTableViewCell.swift */,
+				E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */,
+			);
+			path = HabitTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F60DA52D32882D00E366BC /* Assets.xcassets in Resources */,
+				E6F60DC02D329E6E00E366BC /* GoogleService-Info.plist in Resources */,
 				E6F60DB22D32889000E366BC /* AddHabitVC.xib in Resources */,
+				E6F60DC72D32A03900E366BC /* HabitTableViewCell.xib in Resources */,
 				E6F60DA82D32882D00E366BC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F60DC22D329F4A00E366BC /* AddHabitVC+UITableView.swift in Sources */,
+				E6F60DBE2D329CF800E366BC /* HabitModel.swift in Sources */,
 				E6F60DB32D32889000E366BC /* AddHabitVC.swift in Sources */,
 				E6F60D9C2D32882B00E366BC /* AppDelegate.swift in Sources */,
+				E6F60DC62D32A03900E366BC /* HabitTableViewCell.swift in Sources */,
 				E6F60D9E2D32882B00E366BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +451,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -458,7 +485,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

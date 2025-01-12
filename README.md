@@ -9,8 +9,9 @@ A simple iOS app to track daily habits. Users can input a habit, mark it as comp
 - Real-time data storage with Firebase.
 - Delete Habit
 - Categorized by date
-- Display alert for when habit completed
+- Display alert when habit completed
 
 ## How to Run
 1. Clone the repository:
    git clone https://github.com/KhaledAbouSeada/Habit-Tracking.git
+2. Choose Habit Tracking App from Scheme Drop Down

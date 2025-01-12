@@ -6,25 +6,28 @@
 //
 
 import UIKit
-import FirebaseDatabase
-import FirebaseFirestore
 
 class AddHabitVC: UIViewController {
     
     @IBOutlet weak var habitsTableView: UITableView!
     
-    var habitsData:[String: [HabitModel]] = [:]
-    var dates: [String] = []
+    var addHabitViewModel = AddHabitViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpTableView()
+        addHabitViewModel.listenForHabits(habitsTableView)
         
     }
     
-    
     @IBAction func onAddHabitButtonPressed(_ sender: Any) {
-        
+        addHabitViewModel.alertWithTextField(self, "New Habit", "Enter your habit name") { text in
+            if text == "" {
+                return
+            }else{
+                self.addHabitViewModel.sendHabit(habitName: text ?? "", isCompleted: false)
+            }
+        }
     }
 }

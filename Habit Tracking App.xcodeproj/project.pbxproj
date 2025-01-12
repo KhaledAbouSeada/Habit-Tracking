@@ -19,6 +19,7 @@
 		E6F60DC22D329F4A00E366BC /* AddHabitVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DC12D329F4A00E366BC /* AddHabitVC+UITableView.swift */; };
 		E6F60DC62D32A03900E366BC /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DC42D32A03900E366BC /* HabitTableViewCell.swift */; };
 		E6F60DC72D32A03900E366BC /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */; };
+		E6F60DCF2D32DF0700E366BC /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F60DCE2D32DF0700E366BC /* AddHabitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E6F60DC12D329F4A00E366BC /* AddHabitVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddHabitVC+UITableView.swift"; sourceTree = "<group>"; };
 		E6F60DC42D32A03900E366BC /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
+		E6F60DCE2D32DF0700E366BC /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				E6F60DBC2D328D9F00E366BC /* Model */,
 				E6F60DBB2D328D9E00E366BC /* View */,
+				E6F60DCD2D32DEF000E366BC /* ViewModel */,
 				E6F60DBA2D328D9900E366BC /* Controller */,
 			);
 			path = AddHabit;
@@ -176,6 +179,14 @@
 				E6F60DC52D32A03900E366BC /* HabitTableViewCell.xib */,
 			);
 			path = HabitTableViewCell;
+			sourceTree = "<group>";
+		};
+		E6F60DCD2D32DEF000E366BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6F60DCE2D32DF0700E366BC /* AddHabitViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				E6F60D9C2D32882B00E366BC /* AppDelegate.swift in Sources */,
 				E6F60DC62D32A03900E366BC /* HabitTableViewCell.swift in Sources */,
 				E6F60D9E2D32882B00E366BC /* SceneDelegate.swift in Sources */,
+				E6F60DCF2D32DF0700E366BC /* AddHabitViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +460,13 @@
 				DEVELOPMENT_TEAM = 7Q5B3P5544;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Habit Tracking App/Core/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Habit Tracking";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,11 +496,13 @@
 				DEVELOPMENT_TEAM = 7Q5B3P5544;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Habit Tracking App/Core/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Habit Tracking";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

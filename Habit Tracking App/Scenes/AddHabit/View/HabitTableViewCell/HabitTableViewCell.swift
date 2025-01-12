@@ -17,10 +17,8 @@ class HabitTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         containerView.layer.cornerRadius = 10
-        containerView.layer.shadowOpacity = 0.3
-        containerView.layer.shadowOffset = CGSize(width: 0, height: 2)
-        containerView.layer.shadowRadius = 4
-        containerView.layer.masksToBounds = false
+        containerView.layer.borderWidth = 2
+        containerView.layer.borderColor = UIColor.cyan.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
